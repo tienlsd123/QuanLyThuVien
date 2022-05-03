@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/btn_tv"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="99dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="33dp"
+            android:backgroundTint="@color/orange_800"
+            android:text="Thành Viên"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_sach"
+            app:layout_constraintEnd_toStartOf="@+id/btn_tl"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_sach"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="44dp"
+            android:backgroundTint="@color/orange_800"
+            android:text="Sách"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_tk"
+            app:layout_constraintEnd_toStartOf="@+id/btn_pm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_tv" />
+
+        <Button
+            android:id="@+id/btn_pm"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="44dp"
+            android:backgroundTint="@color/orange_800"
+            android:text="Phiếu Mượn"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_tkdt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_sach"
+            app:layout_constraintTop_toBottomOf="@+id/btn_tl" />
+
+        <Button
+            android:id="@+id/btn_tk"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="195dp"
+            android:backgroundTint="@color/orange_800"
+            android:text="Thống kê"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_tkdt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_sach" />
+
+        <Button
+            android:id="@+id/btn_tkdt"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="195dp"
+            android:backgroundTint="@color/orange_800"
+            android:text="Doanh Thu"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_tk"
+            app:layout_constraintTop_toBottomOf="@+id/btn_pm" />
+
+        <Button
+            android:id="@+id/btn_tl"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="99dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="33dp"
+            android:backgroundTint="@color/orange_800"
+            android:text="Thể loại"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_pm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_tv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
